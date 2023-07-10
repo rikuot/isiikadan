@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!---------------------------------seo meta---------------------------------------->
+    <!-- Primary Meta Tags -->
+    <title>お料理 - 石井花壇 | 温海温泉旅館【公式サイト】</title>
+    <meta name=”robots” content=”noindex”>
+    <meta name="title" content="お料理 - 石井花壇 | 温海温泉旅館【公式サイト】">
+    <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
+    伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://takaji.conohawing.com/isiikadan/html/food.html">
+    <meta property="og:title" content="お料理 - 石井花壇 | 温海温泉旅館【公式サイト】">
+    <meta property="og:description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
+    伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+    <meta property="og:image" content="https://takaji.conohawing.com/isiikadan/img/food-header.jpg"/>
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="お料理 - 石井花壇 | 温海温泉旅館【公式サイト】">
+    <meta property="twitter:description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
+    伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+    <meta property="twitter:image" content="https://takaji.conohawing.com/isiikadan/img/food-header.jpg">
+    <!---------------------------------seo meta---------------------------------------->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/food.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!---------------------------------header---------------------------------------->
+    <header class="header bg-white">
+        <a class="header-logo" href="../index.html">
+            <span class="header-logo__icon"><img src="../img/sakura-icon-border-black.png" alt=""></span>
+            <h1 class="header-logo__title header-logo__title_position">石井花壇</h1>
+        </a>
+        <nav class="nav header__nav">
+            <ul class="nav__contents">
+                <li class="nav__content nav__content_position"><a class="nav__link" href="../html/room.html">お部屋</a></li>
+                <li class="nav__content nav__content_position"><a class="nav__link" href="../html/food.html">お料理</a></li>
+                <li class="nav__content nav__content_position"><a class="nav__link" href="../html/spa.html">温泉</a></li>
+            </ul>
+        </nav>
+        <button id="reserve-btn" class="reserve-btn reserve-btn_position">
+            <span class="reserve-btn_text_style">宿泊予約</span>
+        </button>
+<!---------------------------------modal---------------------------------------->
+<div id="modal" class="modal modal_none">
+    <button id="modal__close" class="modal__close"></button>
+    <div class="modal-inner">
+        <div class="modal__title-wrapper modal__title-wrapper_posiion">
+            <h3 class="modal__title">宿泊予約</h3>
+        </div>
+        <form class="form" action="">
+            <div class="form__name-wrapper">
+                <label for="form__name">お名前</label>
+                <input class="form__name form__input" type="name" value=" 例：石井正悟" id="form__name">
+            </div>
+            <div class="form__mail-wrapper">
+                <label for="form__mail">メールアドレス</label>
+                <input class="form__mail form__input" type="email" value="例:Example@example.com" id="form__mail">
+            </div>
+            <div class="form__plan-wrapper">
+                <label for="form__plan">ご希望プラン（空いているプランのみ表示されます）</label>
+                <select class="form__plan form__input" type="text" value="" selected id="form__plan">
+                    <option hidden>プランを選択してください</option>
+                    <option value="1">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                    <option value="2">②平日に優雅に楽しむ、特別宿泊プラン</option>
+                    <option value="3">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+                </select>   
+            </div>
+            <div class="form__time-wrapper">
+                <label for="form__time">日時選択</label>
+                <input class="form__time form__input" type="datetime-local" placeholder="日時を選択してください" id="form__time">
+            </div>  
+            <div class="submit-wrapper">
+                <input type="submit" class="form__submit" value="送信する">
+            </div>
+        </form>
+    </div>
+</div>
+<div id="modal__musk" class="modal__musk modal__musk_none"></div>
+</div>
+<!---------------------------------modal---------------------------------------->
+        <button id="humberger"class="humberger-btn">
+            <span class="humberger-btn__bar"></span>
+            <span class="humberger-btn__bar"></span>
+            <span class="humberger-btn__bar"></span>
+        </button>
+        <nav id="slide" class="slide slide-none">
+            <button id="slide__close" class="slide__close"></button>
+            <ul class="slide__contents">
+                <li class="slide__content"><a class="slide__link" href="../html/room.html">お部屋</a></li>
+                <li class="slide__content"><a class="slide__link" href="../html/food.html">お料理</a></li>
+                <li class="slide__content"><a class="slide__link" href="../html/spa.html">温泉</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!---------------------------------header---------------------------------------->
+    <main>
+        <div class="kv-wrapper">
+            <div class="subpage-title_position">
+                <h1 class="subpage-title" data-aos="fade">お料理</h1>
+            </div>
+        </div>
+        <section class="section1">
+            <div class="inner">
+                <div class="bread-crumb-wrapper">
+                    <ul class="bread-crumbs">
+                        <li class="bread-crumb"><a class="bread-crumb__link" href="../index.html">トップ</a></li>
+                        <li class="bread-crumb"><span>&nbsp;> </span><a class="bread-crumb__link" href="#">お料理</a></li>
+                    </ul>
+                </div>
+                <div class="section-title section-title_position" data-aos="fade-up">
+                    <h2>地元熱海の市場で仕入れた<br class="tab-sp-onry">食材のみを使った食材をふんだんに使い、<br>
+                        大将の技が光る「熱海料理」<br>
+                        四季ごと、日ごとに変化する味わいを、<br class="tab-sp-onry">
+                        どうぞご堪能ください。</h2>
+                </div>
+                <div class="contents-wrapper">
+                    <ul class="contents">
+                        <li class="content content_position">
+                            <div class="content__img-wrapper content__img-wrapper_position first" data-aos="fade" data-aos-offset="100"></div>
+                            <div class="introduction introduction_position first">
+                                <div class="introduction-container introduction-container_position">
+                                    <h2 class="introduction__title" data-aos="fade-right">地元食材にこだわった会席料理</h2>
+                                    <p class="introduction__text introduction__text_up" data-aos="fade-up">みずみずしくほのかに甘い野菜、新鮮で味に深みがある魚介類、肉類。<br>
+                                        旬の素材をそのままに生かす、経験に裏打ちされた確かな技。<br>
+                                        四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content content_position">
+                            <div class="content__img-wrapper content__img-wrapper_position reverse second" data-aos="fade" data-aos-offset="100"></div>
+                            <div class="introduction introduction_position reverse second">
+                                <div class="introduction-container introduction-container_position reverse">
+                                    <h2 class="introduction__title" data-aos="fade-right">熱海の漁港で目利きの品を</h2>
+                                    <p class="introduction__text introduction__text_up" data-aos="fade-up">石井花壇でお出しする料理はすべて料理長である大将の目利きで、<br>
+                                        熱海の魚市場でその日のうちに仕入れたものを使用しております。<br>
+                                        日本海の宝玉を十分にお楽しみください。</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content content_position">
+                            <div class="content__img-wrapper content__img-wrapper_position third" data-aos="fade" data-aos-offset="100"></div>
+                            <div class="introduction introduction_position third">
+                                <div class="introduction-container introduction-container_position">
+                                    <h2 class="introduction__title" data-aos="fade-right">食材が一流、職人も一流</h2>
+                                    <p class="introduction__text introduction__text_up" data-aos="fade-up">石井花壇の料理人は料亭で20年経験を積んだものばかり。<br>
+                                        その時の最も旬な食材を、最高の調理でお届けします。<br>
+                                        また、お料理への細かいご要望にもお答えできますので、<br>
+                                        お気軽にお申し付けください。</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <nav class="footer-nav">
+                <a class="footer-nav__link" href="../html/spa.html" data-aos="fade-up" data-aos-duration="1600">温泉</a>
+                <a class="footer-nav__link" href="../html/food.html" data-aos="fade-up" data-aos-duration="1300">お料理</a>
+                <a class="footer-nav__link" href="../html/room.html" data-aos="fade-up" data-aos-duration="1000">お部屋</a>
+            </nav>
+            <a href="../index.html" class="section-title footer__title_position" data-aos="fade-up">
+                <div class="section-title__logo"></div>
+                <h1 class="footer__title_text section-title__text">石井花壇</h1>
+            </a>
+            <div class="footer__access">
+                <p class="footer__access_top" data-aos="fade-up"><span class="mail-num">〒000-0000</span><span class="address">山形県鶴岡市xxxxxxxxxxx</span></p>
+                <p class="footer__access_bottom" data-aos="fade-up"><span class="tel-num">TEL.000-0000-0000</span><span  class="fax-num">FAX.00-0000-0000</span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <small>Copyright © 石井花壇 All Rights Reserved.</small>
+        </div>
+    </footer>
+    <a href="https://takaji.website/" class="return-portfolio">
+        <figure class="return-portfolio-wrapper">
+            <img class="return-portfolio-img" src="../img/return-portfolio.svg" alt="">
+        </figure>
+        <p class="return-portfolio-text">ポートフォリオへ<br>戻る</p>
+    </a>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/food.js"></script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "トップ",
+              "item": "https://takaji.conohawing.com/isiikadan/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "お部屋",
+              "item": "https://takaji.conohawing.com/isiikadan/html/room.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "お料理",
+              "item": "https://takaji.conohawing.com/isiikadan/html/food.html"
+            },
+            {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "温泉",
+            "item": "https://takaji.conohawing.com/isiikadan/html/spa.html"
+            }
+          ]
+        }
+        </script>
+</body>
+</html>
